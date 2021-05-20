@@ -1,9 +1,23 @@
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+// Pages
+import {Dashboard, Login, Error} from "../../Pages"
 
 function App() {
   return (
-    <div className="App">
-     <h1>Hello From App</h1>
-    </div>
+    <Router> 
+      <Switch>
+        <Route path="/" exact>
+          <Dashboard></Dashboard>
+        </Route>    
+        <Route path="/login">
+          <Login></Login>
+        </Route>
+        <Route path="*">
+          <Error></Error>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
