@@ -1,4 +1,5 @@
-const Data = {
+const data = {
+    
     42: {
         Id: "4321",
         Url: "/coins/42/overview",
@@ -294,7 +295,6 @@ const Data = {
         }
         },
         IsTrading: false
-        },       
-};
-
-export {Data};
+        },
+    }
+export default data;

@@ -4,12 +4,13 @@ import React from 'react'
 import {CoinsContext} from "../Context/CoinsContext"
 
 const Dashboard = () => {
-    //Context:
-    const data = React.useContext(CoinsContext);
-    console.log(data);
+
+
     return (
         <div>
             Home Page
+            <h2>Coins</h2>
+         
         </div>
     )
 }
