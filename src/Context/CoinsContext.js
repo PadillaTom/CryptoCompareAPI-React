@@ -7,15 +7,19 @@ import Data from "./mockData/allCoins";
 // Root URL:
 const rootUrl = "https://min-api.cryptocompare.com/data";
 
-
 // Creating Context:
 const CoinsContext = React.createContext();
 
+
+
+
+
+
 const CoinsProvider = ({children}) => {
     // *** MOCK DATA ***
-    const [allCoins, setAllCoins] = useState([Data]);
-    
-    return <CoinsContext.Provider value={allCoins}>
+    const [allCoins, setAllCoins] = useState(Data);
+  
+    return <CoinsContext.Provider value={{allCoins}}>
         {children}
     </CoinsContext.Provider>
 }
